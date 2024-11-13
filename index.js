@@ -32,6 +32,7 @@ app.get("/compare", (req, res) => {
     });
 })
 
+//Jwt
 app.get("/token", (req, res) => {
     let token = jwt.sign({email: "likhithkpdev@gmail.com"}, "secret");
     res.cookie("token", token);
